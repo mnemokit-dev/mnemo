@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(python:*)",
+      "WebFetch(domain:pypi.org)",
+      "Bash(uv run:*)",
+      "mcp__mnemo-memory__save_context",
+      "mcp__mnemo-memory__load_context",
+      "mcp__mnemo-memory__search_memory"
+    ]
+  }
+}
