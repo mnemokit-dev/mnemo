@@ -7,7 +7,13 @@
       "Bash(uv run:*)",
       "mcp__mnemo-memory__save_context",
       "mcp__mnemo-memory__load_context",
-      "mcp__mnemo-memory__search_memory"
+      "mcp__mnemo-memory__search_memory",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "Bash(npx zenn:*)",
+      "Bash(uv sync:*)",
+      "Bash(uv pip:*)",
+      "Bash(.venv/Scripts/python.exe:*)"
     ]
   }
 }
