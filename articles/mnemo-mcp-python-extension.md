@@ -136,29 +136,13 @@ MCP仕様に準拠したサーバーをこれだけ簡潔に書けるのがFastM
 ### インストール
 
 ```bash
-pip install mnemo
-# または
-uv add mnemo
+pip install mnemokit
+mnemo-setup
 ```
 
-### Claude Codeへの登録
+`mnemo-setup` を実行すると、Claude Code の hooks と MCP サーバー設定が自動で構成されます。その後 Claude Code を再起動すると、`save_context`・`load_context`・`search_memory` が使えるようになります。
 
-MCP設定ファイルに追記します。
-
-**macOS / Linux**: `~/.claude/claude_desktop_config.json`
-**Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "mnemo-memory": {
-      "command": "mnemo-memory"
-    }
-  }
-}
-```
-
-設定後にClaude Codeを再起動すると、`save_context`・`load_context`・`search_memory` が使えるようになります。
+> **パッケージ名について**: PyPI の `mnemo` は 2021 年から更新のない別プロジェクトが占有しているため、`mnemokit` という名前で公開しています。
 
 ---
 
