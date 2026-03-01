@@ -3,7 +3,7 @@ title: "Claude CodeをPythonで拡張するMCPツールmnemoを作った"
 emoji: "🧠"
 type: "tech"
 topics: ["claudecode", "mcp", "python", "ai", "llm"]
-published: false
+published: true
 ---
 
 ## はじめに：Claude Codeを使っていて感じた課題
