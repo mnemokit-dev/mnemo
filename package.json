@@ -1,0 +1,11 @@
+{
+  "name": "mnemo-zenn",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "zenn": "zenn"
+  },
+  "devDependencies": {
+    "zenn-cli": "latest"
+  }
+}
