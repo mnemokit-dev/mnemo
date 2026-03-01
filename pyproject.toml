@@ -3,12 +3,15 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mnemo"
+name = "mnemokit"
 version = "0.1.0"
-description = "MCP toolset that extends AI agents like Claude Code"
+description = "MCP toolkit for Claude Code agents"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.11"
+authors = [
+    { name = "Mika", email = "kzk1998713@gmail.com" },
+]
 keywords = ["mcp", "claude", "ai", "agent", "memory"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -17,12 +20,19 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
+
 dependencies = [
     "mcp>=1.1.0",
     "httpx>=0.27",
     "beautifulsoup4>=4.12",
     "markdownify>=0.13",
 ]
+
+[project.urls]
+Homepage = "https://github.com/mnemokit-dev/mnemo"
+Repository = "https://github.com/mnemokit-dev/mnemo"
+Issues = "https://github.com/mnemokit-dev/mnemo/issues"
+PyPI = "https://pypi.org/project/mnemokit/"
 
 [project.optional-dependencies]
 dev = [
@@ -35,6 +45,7 @@ dev = [
 mnemo-memory = "mnemo.memory.server:main"
 mnemo-connectors = "mnemo.connectors.server:main"
 mnemo-testing = "mnemo.testing.server:main"
+mnemo-setup = "mnemo.install:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["mnemo"]

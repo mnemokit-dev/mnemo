@@ -64,6 +64,17 @@ types: feat, fix, docs, refactor, test, chore
 - **商用ライセンス**: `connectors/`、`testing/` および有料機能
 - ライセンスチェックロジックは `mnemo/license.py` に集約する
 
+## mnemo使用ルール
+
+作業開始時：
+- search_memory("プロジェクト名")で関連コンテキストを確認する
+
+意思決定をしたとき：
+- save_context("decision_日付", "内容と理由")で即座に保存
+
+作業終了時：
+- save_context("progress_日付", "今日やったこと・次にやること")を保存
+
 ## 重要な制約
 
 - MCP仕様の破壊的変更に追従すること（`modelcontextprotocol` パッケージのバージョン固定を推奨）
